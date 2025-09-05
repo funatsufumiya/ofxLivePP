@@ -17,7 +17,7 @@ Live++ for openFrameworks
 int main( ){
 	ofLogToConsole();
 
-	if (!ofxLivePP::setup()) {
+	if (!ofxLivePP::setup()) { // if you use ofxLivePP as local addon, please call ofxLivePP::setup(true) instead.
 		return 1;
 	}
 
