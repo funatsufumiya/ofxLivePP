@@ -12,7 +12,7 @@
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <OptimizeReferences>false</OptimizeReferences>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <AdditionalOptions>%(AdditionalOptions) /DEBUG /OPT:NOREF /LTCG /ZI</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /DEBUG:FULL /OPT:NOREF /LTCG /ZI</AdditionalOptions>
       <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
       <EnableCOMDATFolding>false</EnableCOMDATFolding>
     </Link>
