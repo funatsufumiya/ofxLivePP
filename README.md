@@ -38,7 +38,7 @@ int main( ){
 
 ## Visual Studio Project Settings
 
-(Planning to create easy utility script for this.)
+- Add [`settings.props`](./settings.props) file from addon to your project (via the "Property Manager" window in Visual Studio)
 
 https://liveplusplus.tech/docs/documentation.html#linker_settings
 
