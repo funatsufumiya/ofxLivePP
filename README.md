@@ -51,4 +51,9 @@ https://liveplusplus.tech/docs/documentation.html#linker_settings
 > 
 > Linker -> Optimization -> Enable COMDAT Folding must be set to No (/OPT:NOICF)
 > 
+
 > Linker -> Debugging -> Generate Debug Info must be set to Generate Debug Information optimized for sharing and publishing (/DEBUG:FULL)
+
+## License
+
+0BSD or WTFPL
