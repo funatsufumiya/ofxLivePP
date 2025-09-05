@@ -1,6 +1,6 @@
 # ofxLivePP
 
-Live++ for openFrameworks
+[Live++](https://liveplusplus.tech) for openFrameworks
 
 ## Usage
 
@@ -57,3 +57,4 @@ https://liveplusplus.tech/docs/documentation.html#linker_settings
 ## License
 
 0BSD or WTFPL
+
