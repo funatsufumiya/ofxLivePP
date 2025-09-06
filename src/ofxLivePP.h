@@ -36,14 +36,4 @@ public:
     }
 
 protected:
-    static std::vector<wchar_t> string_to_wchar(const std::string& in_str)
-    {
-        setlocale(LC_ALL, "Japanese_Japan.932");
-        std::vector<wchar_t> out_wstr;
-        const size_t newsizew = strlen(in_str.c_str()) + 1;
-        size_t convertedChars = 0;
-        out_wstr.resize(newsizew);
-        mbstowcs_s(&convertedChars, out_wstr.data(), newsizew, in_str.c_str(), _TRUNCATE);
-        return out_wstr;
-    }
 };
