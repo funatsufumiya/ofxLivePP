@@ -21,15 +21,20 @@ int main( ){
 		return 1;
 	}
 
-	//Use ofGLFWWindowSettings for more options like multi-monitor fullscreen
+
+	// Start of as your like -----------------------------------
+
 	ofGLWindowSettings settings;
 	settings.setSize(1024, 768);
-	settings.windowMode = OF_WINDOW; //can also be OF_FULLSCREEN
+	settings.windowMode = OF_WINDOW;
 
 	auto window = ofCreateWindow(settings);
 
 	ofRunApp(window, make_shared<ofApp>());
 	ofRunMainLoop();
+
+	// End of as your like -----------------------------------
+
 
 	// destroy the Live++ agent
 	ofxLivePP::destroy();
@@ -74,5 +79,6 @@ https://liveplusplus.tech/docs/documentation.html#linker_settings
 ## License
 
 0BSD or WTFPL
+
 
 
