@@ -5,12 +5,16 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <AdditionalOptions>%(AdditionalOptions) /Gm- /hotpatch /Z7 </AdditionalOptions>
+      <CreateHotpatchableImage>true</CreateHotpatchableImage>
     </ClCompile>
     <Link>
       <AdditionalOptions>%(AdditionalOptions) /DEBUG:FULL /OPT:NOREF /OPT:NOICF /FUNCTIONPADMIN </AdditionalOptions>
+      <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
