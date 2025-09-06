@@ -7,9 +7,10 @@
     <ClCompile>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
+      <AdditionalOptions>%(AdditionalOptions) /Gm- /hotpatch /Z7 </AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalOptions>%(AdditionalOptions) /DEBUG:FULL /OPT:NOREF /OPT:NOICF /FUNCTIONPADMIN /Gm- /hotpatch /LTCG /Z7 </AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /DEBUG:FULL /OPT:NOREF /OPT:NOICF /FUNCTIONPADMIN </AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
