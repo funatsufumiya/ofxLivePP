@@ -38,7 +38,24 @@ int main( ){
 
 ## Visual Studio Project Settings
 
-- Add [`settings.props`](./settings.props) file from addon to your project (via the "Property Manager" window in Visual Studio)
+### Recommended way
+
+Add [`settings.props`](./settings.props) file from addon to your project (via the "Property Manager" window in Visual Studio)
+
+### Manually
+
+https://liveplusplus.tech/docs/documentation.html#compiler_settings_MSVC
+
+> MSVC/Visual Studio
+> These compiler settings must be enabled in the configuration properties of each project which uses Live++:
+> 
+> C/C++ -> General -> Debug Information Format must be set to either C7 compatible (/Z7) or Program Database (/Zi)
+> 
+> C/C++ -> Code Generation -> Enable Minimal Rebuild must be set to No (/Gm-)
+> 
+> x86/Win32 projects additionally require the following compiler settings:
+> 
+> C/C++ -> Code Generation -> Create Hotpatchable Image must be set to Yes (/hotpatch)
 
 https://liveplusplus.tech/docs/documentation.html#linker_settings
 
@@ -57,4 +74,5 @@ https://liveplusplus.tech/docs/documentation.html#linker_settings
 ## License
 
 0BSD or WTFPL
+
 
