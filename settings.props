@@ -9,12 +9,7 @@
       <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
-      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
-      <OptimizeReferences>false</OptimizeReferences>
-      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <AdditionalOptions>%(AdditionalOptions) /DEBUG:FULL /OPT:NOREF /LTCG /ZI</AdditionalOptions>
-      <CreateHotPatchableImage>Enabled</CreateHotPatchableImage>
-      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <AdditionalOptions>%(AdditionalOptions) /DEBUG:FULL /OPT:NOREF /OPT:NOICF /FUNCTIONPADMIN /Gm- /hotpatch /LTCG /Z7 </AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
